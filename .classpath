@@ -41,6 +41,7 @@
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/httpcore-4.4.3.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/httpmime-4.5.1.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-assets-2.0.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-common-dictionary-2.0.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-core-2.0.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-hibernate-config-2.0.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-redis-config-2.0.jar"/>
