@@ -3,11 +3,15 @@ package com.demo.model;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Convert;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.OrderColumn;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Version;
@@ -42,6 +46,10 @@ public class Product extends BaseEntity implements Recordable<UserDetails> {
 	@SearchableProperty
 	private String name;
 
+	@UiConfig(width = "150px")
+	@ManyToOne(optional = false)
+	private Category category;
+
 	@UiConfig(width = "80px", template = "${value}个")
 	@Max(100)
 	@Min(0)
@@ -65,6 +73,10 @@ public class Product extends BaseEntity implements Recordable<UserDetails> {
 
 	@UiConfig(type = "textarea", viewTemplate = "<#if entity.quantity==0>缺货<#else>${value}</#if>")
 	private String description;
+
+	@ElementCollection
+	@OrderColumn
+	private List<Photo> photos;
 
 	@UiConfig(hidden = true)
 	@Column(updatable = false)
@@ -99,6 +111,14 @@ public class Product extends BaseEntity implements Recordable<UserDetails> {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
 	}
 
 	public int getQuantity() {
@@ -155,6 +175,14 @@ public class Product extends BaseEntity implements Recordable<UserDetails> {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public List<Photo> getPhotos() {
+		return photos;
+	}
+
+	public void setPhotos(List<Photo> photos) {
+		this.photos = photos;
 	}
 
 	@Override

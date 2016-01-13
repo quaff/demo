@@ -3,6 +3,7 @@ package com.demo.service;
 import org.ironrhino.core.service.BaseManagerImpl;
 import org.ironrhino.core.struts.ValidationException;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.demo.model.Product;
 
@@ -10,6 +11,7 @@ import com.demo.model.Product;
 public class ProductManagerImpl extends BaseManagerImpl<Product> implements ProductManager {
 
 	@Override
+	@Transactional
 	public void save(Product product) {
 		if (product.isNew() && product.isFeatured()) { // 纯演示用,这个规则本应该放在实体类里面
 			ValidationException ve = new ValidationException();
