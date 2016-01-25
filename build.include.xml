@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+
+	<property name="dist.jar.name" value="demo-client-${version}.jar" />
+	<property name="dist.jar-sources.name" value="demo-client-${version}-sources.jar" />
+	<property name="dist.jar.includes" value="com/demo/domain/**,com/demo/service/**" />
+	<property name="dist.jar.excludes" value="*/**/*Manager.*,*/**/*Impl.*" />
+
+	<target name="pre-jar">
+		<delete file="${target.dir}/${dist.jar.name}" />
+		<delete file="${target.dir}/${dist.jar-sources.name}" />
+	</target>
+
+	<target name="post-jar">
+		<jar jarfile="${target.dir}/${dist.jar.name}" basedir="${classes.dir}" includes="${dist.jar.includes}" excludes="${dist.jar.excludes}" />
+		<jar jarfile="${target.dir}/${dist.jar-sources.name}" basedir="${src.dir}" includes="${dist.jar.includes}" excludes="${dist.jar.excludes}" />
+	</target>
+
+</project>

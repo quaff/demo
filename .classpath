@@ -45,6 +45,8 @@
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-core-2.0.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-hibernate-config-2.0.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-redis-config-2.0.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-remoting-common-2.0.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-remoting-server-2.0.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-security-2.0.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-security-config-2.0.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-sitemesh-config-2.0.jar"/>
