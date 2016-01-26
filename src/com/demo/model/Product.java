@@ -32,6 +32,8 @@ import org.ironrhino.core.search.elasticsearch.annotations.SearchableProperty;
 import org.ironrhino.core.struts.ValidationException;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import com.demo.enums.Status;
+
 @AutoConfig
 @Entity
 @Richtable(order = "quantity desc,name asc")

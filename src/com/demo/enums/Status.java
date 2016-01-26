@@ -1,4 +1,4 @@
-package com.demo.model;
+package com.demo.enums;
 
 import org.ironrhino.core.model.Displayable;
 
