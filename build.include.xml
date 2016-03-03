@@ -11,8 +11,20 @@
 	</target>
 
 	<target name="post-jar">
-		<jar jarfile="${target.dir}/${dist.jar.name}" basedir="${classes.dir}" includes="${dist.jar.includes}" />
-		<jar jarfile="${target.dir}/${dist.jar-sources.name}" basedir="${src.dir}" includes="${dist.jar.includes}" />
+		<jar jarfile="${target.dir}/${dist.jar.name}" basedir="${classes.dir}" includes="${dist.jar.includes}">
+			<manifest>
+				<attribute name="Artifact-Version" value="${version}" />
+				<attribute name="Build-Timestamp" value="${timestamp}" />
+				<attribute name="Build-Revision" value="${revision}" />
+			</manifest>
+		</jar>
+		<jar jarfile="${target.dir}/${dist.jar-sources.name}" basedir="${src.dir}" includes="${dist.jar.includes}">
+			<manifest>
+				<attribute name="Artifact-Version" value="${version}" />
+				<attribute name="Build-Timestamp" value="${timestamp}" />
+				<attribute name="Build-Revision" value="${revision}" />
+			</manifest>
+		</jar>
 	</target>
 
 </project>
