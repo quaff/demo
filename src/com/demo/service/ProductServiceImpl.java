@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.hibernate.criterion.Order;
 import org.ironrhino.core.util.BeanUtils;
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -13,6 +14,9 @@ import com.demo.domain.Product;
 
 @Component
 public class ProductServiceImpl implements ProductService {
+
+	@Autowired
+	Logger logger;
 
 	@Autowired
 	ProductManager productManager;
@@ -33,6 +37,7 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	@Transactional(readOnly = true)
 	public Product getById(String id) {
+		logger.info("try find product {}", id);
 		com.demo.model.Product p = productManager.get(id);
 		if (p == null)
 			return null;
