@@ -10,9 +10,14 @@ import org.ironrhino.core.model.Ordered;
 import org.ironrhino.core.search.elasticsearch.annotations.Searchable;
 import org.ironrhino.core.search.elasticsearch.annotations.SearchableProperty;
 
+import lombok.Getter;
+import lombok.Setter;
+
 @AutoConfig
 @Entity
 @Searchable
+@Getter
+@Setter
 public class Category extends BaseEntity implements Ordered<Category> {
 
 	private static final long serialVersionUID = 1L;
@@ -27,30 +32,6 @@ public class Category extends BaseEntity implements Ordered<Category> {
 
 	@UiConfig(type = "textarea")
 	private String description;
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public int getDisplayOrder() {
-		return displayOrder;
-	}
-
-	public void setDisplayOrder(int displayOrder) {
-		this.displayOrder = displayOrder;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
 
 	@Override
 	public int compareTo(Category other) {

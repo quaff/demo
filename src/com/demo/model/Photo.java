@@ -6,7 +6,10 @@ import javax.persistence.Embeddable;
 
 import org.ironrhino.core.metadata.UiConfig;
 
+import lombok.Data;
+
 @Embeddable
+@Data
 public class Photo implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -16,21 +19,5 @@ public class Photo implements Serializable {
 
 	@UiConfig(cssClass = "input-medium")
 	private String url;
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	public String getUrl() {
-		return url;
-	}
-
-	public void setUrl(String url) {
-		this.url = url;
-	}
 
 }

@@ -36,11 +36,16 @@ import org.ironrhino.core.struts.ValidationException;
 
 import com.demo.enums.Status;
 
+import lombok.Getter;
+import lombok.Setter;
+
 @AutoConfig
 @Entity
 @Richtable(order = "quantity desc,name asc")
 @Owner(propertyName = "createUser", isolate = true)
 @Searchable
+@Getter
+@Setter
 public class Product extends BaseEntity {
 
 	private static final long serialVersionUID = 1L;
@@ -104,126 +109,6 @@ public class Product extends BaseEntity {
 
 	@Version
 	private int verison = -1;
-
-	public int getVerison() {
-		return verison;
-	}
-
-	public void setVerison(int verison) {
-		this.verison = verison;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public Category getCategory() {
-		return category;
-	}
-
-	public void setCategory(Category category) {
-		this.category = category;
-	}
-
-	public int getQuantity() {
-		return quantity;
-	}
-
-	public void setQuantity(int quantity) {
-		this.quantity = quantity;
-	}
-
-	public BigDecimal getPrice() {
-		return price;
-	}
-
-	public void setPrice(BigDecimal price) {
-		this.price = price;
-	}
-
-	public boolean isFeatured() {
-		return featured;
-	}
-
-	public void setFeatured(boolean featured) {
-		this.featured = featured;
-	}
-
-	public Status getStatus() {
-		return status;
-	}
-
-	public void setStatus(Status status) {
-		this.status = status;
-	}
-
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
-
-	public Set<String> getTags() {
-		return tags;
-	}
-
-	public void setTags(Set<String> tags) {
-		this.tags = tags;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-	public List<Photo> getPhotos() {
-		return photos;
-	}
-
-	public void setPhotos(List<Photo> photos) {
-		this.photos = photos;
-	}
-
-	public Date getCreateDate() {
-		return createDate;
-	}
-
-	public void setCreateDate(Date createDate) {
-		this.createDate = createDate;
-	}
-
-	public Date getModifyDate() {
-		return modifyDate;
-	}
-
-	public void setModifyDate(Date modifyDate) {
-		this.modifyDate = modifyDate;
-	}
-
-	public String getCreateUser() {
-		return createUser;
-	}
-
-	public void setCreateUser(String createUser) {
-		this.createUser = createUser;
-	}
-
-	public String getModifyUser() {
-		return modifyUser;
-	}
-
-	public void setModifyUser(String modifyUser) {
-		this.modifyUser = modifyUser;
-	}
 
 	@PreUpdate
 	@PrePersist

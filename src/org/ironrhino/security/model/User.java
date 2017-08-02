@@ -11,25 +11,22 @@ import org.ironrhino.core.search.elasticsearch.annotations.Searchable;
 
 import com.demo.model.Department;
 
+import lombok.Getter;
+import lombok.Setter;
+
 @PublishAware
 @AutoConfig
 @Searchable
 @Entity
 @Table(name = "user")
 @Richtable(order = "username asc")
+@Getter
+@Setter
 public class User extends BaseUser {
 
 	private static final long serialVersionUID = 1L;
 
 	@ManyToOne
 	private Department department;
-
-	public Department getDepartment() {
-		return department;
-	}
-
-	public void setDepartment(Department department) {
-		this.department = department;
-	}
 
 }
