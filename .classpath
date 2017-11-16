@@ -29,10 +29,8 @@
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/commons-pool2-2.4.2.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/disruptor-3.3.6.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/dom4j-1.6.1.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ehcache-core-2.6.11.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/freemarker-2.3.26.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/fst-2.48.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/guava-18.0.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/hibernate-commons-annotations-5.0.1.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/hibernate-core-5.1.5.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/hibernate-validator-6.0.1.jar"/>
@@ -46,6 +44,7 @@
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-hibernate-config-2.0.6.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-remoting-common-2.0.6.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-remoting-server-2.0.6.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-rest-2.0.6.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-security-2.0.6.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-security-config-2.0.6.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-security-remoting-provider-2.0.6.jar"/>
@@ -95,5 +94,7 @@
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/kafka-clients-0.10.2.1.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/spring-data-commons-1.13.0.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/jaxb-api-2.3.0.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/cache2k-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/cache2k-core-1.0.1.jar"/>
 	<classpathentry kind="output" path="webapp/WEB-INF/classes"/>
 </classpath>

@@ -3,7 +3,7 @@
 
 	<property name="dist.jar.name" value="demo-remoting-${version}.jar" />
 	<property name="dist.jar-sources.name" value="demo-remoting-${version}-sources.jar" />
-	<property name="dist.jar.includes" value="com/demo/domain/**,com/demo/enums/**,com/demo/service/*Service.*" />
+	<property name="dist.jar.includes" value="com/demo/domain/**,com/demo/enums/**,com/demo/service/*Service.*,com/demo/api/*Service.*" />
 
 	<target name="pre-jar">
 		<delete file="${target.dir}/${dist.jar.name}" />
