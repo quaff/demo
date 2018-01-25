@@ -24,7 +24,7 @@ import lombok.Setter;
 @Setter
 public class User extends BaseUser {
 
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 7307419528067871480L;
 
 	@ManyToOne
 	private Department department;

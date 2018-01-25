@@ -56,7 +56,7 @@ public class Product extends BaseEntity {
 	private String name;
 
 	@UiConfig(width = "150px")
-	@ManyToOne(optional = false)
+	@ManyToOne
 	private Category category;
 
 	@UiConfig(width = "80px", template = "${value}个")
