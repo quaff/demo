@@ -8,12 +8,8 @@
 	<#if !user.new>
 		<@s.hidden name="user.id" />
 		<@s.textfield name="user.username" readonly="true"/>
-		<@s.password name="password"/>
-		<@s.password name="confirmPassword"/>
 	<#else>
 		<@s.textfield name="user.username" class="required checkavailable regex conjunct" data\-replacement="controls-user-roles" data\-regex="${statics['org.ironrhino.security.model.User'].USERNAME_REGEX}" data\-checkurl="${actionBaseUrl}/checkavailable"/>
-		<@s.password name="password" class="required"/>
-		<@s.password name="confirmPassword" class="required"/>
 	</#if>
 	<@s.textfield name="user.name" class="required"/>
 	<@s.textfield name="user.email" type="email" class="email checkavailable" data\-checkurl="${actionBaseUrl}/checkavailable"/>
