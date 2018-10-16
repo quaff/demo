@@ -7,7 +7,6 @@ import org.hibernate.criterion.Order;
 import org.ironrhino.core.util.BeanUtils;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.demo.api.ProductService;
@@ -36,7 +35,7 @@ public class ProductController implements ProductService {
 	}
 
 	@Override
-	public Product getById(@PathVariable String id) {
+	public Product getById(String id) {
 		logger.info("try find product {}", id);
 		com.demo.model.Product p = productManager.get(id);
 		if (p == null)
