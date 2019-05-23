@@ -36,17 +36,17 @@
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/httpclient-4.5.4.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/httpcore-4.4.8.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/httpmime-4.5.4.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-assets-4.0.1.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-common-dictionary-4.0.1.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-core-4.0.1.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-hibernate-config-4.0.1.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-remoting-common-4.0.1.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-remoting-server-4.0.1.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-rest-4.0.1.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-security-4.0.1.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-security-config-4.0.1.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-security-remoting-provider-4.0.1.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-sitemesh-config-4.0.1.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-assets-4.0.2.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-common-dictionary-4.0.2.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-core-4.0.2.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-hibernate-config-4.0.2.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-remoting-common-4.0.2.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-remoting-server-4.0.2.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-rest-4.0.2.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-security-4.0.2.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-security-config-4.0.2.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-security-remoting-provider-4.0.2.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ironrhino-sitemesh-config-4.0.2.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/jackson-annotations-2.9.8.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/jackson-core-2.9.8.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/jackson-databind-2.9.8.jar"/>
